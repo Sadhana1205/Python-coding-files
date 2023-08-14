@@ -1,0 +1,383 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "11971028",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the range4\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "4\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1) Write a Python program that prints all the numbers from 0 to 6 except 3 and 6.\n",
+    "\n",
+    "n=int(input(\"enter the range\"))\n",
+    "print(0)\n",
+    "for i in range(1,n+1):\n",
+    "    if(i%3==0):\n",
+    "        continue\n",
+    "    else:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "fbc6ac04",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the range: 4\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "#2) Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number\n",
+    "\n",
+    "n=int(input(\"enter the range: \"))\n",
+    "sum_of_numbers=0\n",
+    "for i in range(n+1):\n",
+    "    sum_of_numbers+=i\n",
+    "print(sum_of_numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "88a862d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter the number to print its multiplication table: 7\n",
+      "7 x 1 = 7\n",
+      "7 x 2 = 14\n",
+      "7 x 3 = 21\n",
+      "7 x 4 = 28\n",
+      "7 x 5 = 35\n",
+      "7 x 6 = 42\n",
+      "7 x 7 = 49\n",
+      "7 x 8 = 56\n",
+      "7 x 9 = 63\n",
+      "7 x 10 = 70\n"
+     ]
+    }
+   ],
+   "source": [
+    "#3) Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number.\n",
+    "\n",
+    "num=int(input(\"enter the number to print its multiplication table: \"))\n",
+    "n=10\n",
+    "i=1\n",
+    "while (i<=n):\n",
+    "    print(num,\"x\",i,\"=\",num*i)\n",
+    "    i=i+1\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "32c0ece5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter ur number: 4265656555656\n",
+      "13\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4) Write a program to count the total number of digits in a number using a while loop.\n",
+    "\n",
+    "n=input(\"enter ur number: \")\n",
+    "l=len(n)\n",
+    "count=0\n",
+    "i=0\n",
+    "while (i<=l-1):\n",
+    "    if(n[i].isdigit()):\n",
+    "        count+=1\n",
+    "    i=i+1\n",
+    "print(count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "622bac41",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#5) Write a Python program to guess a number between 1 to\n",
+    "n=int(input(\"enter the real num\"))\n",
+    "while(True):\n",
+    "    num=int(input(\"enter the matching number\"))\n",
+    "    if(num==n):\n",
+    "        print(\"well guessed\")\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dda85030",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#6) Write a Python program which iterates the integers from 1 to 60. For multiples of three print \"Fizz\" instead of the\n",
+    "# number and for the multiples of five print \"Buzz\". For numbers which are multiples of both three and five print \n",
+    "#\"FizzBuzz\".\n",
+    "\n",
+    "n=int(input(\"enter the range: \"))\n",
+    "for i in range(1,n+1):\n",
+    "    if(i%3==0) and (i%5==0):\n",
+    "        print(i,\"fizzbuzz\")\n",
+    "    elif(i%3==0):\n",
+    "        print(i,\"fizz\")\n",
+    "    elif(i%5==0):\n",
+    "        print(i,\"buzz\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "bdb557fd",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7) Write a Python program that accepts a string and calculate the number of digits and letters.\n",
+    "\n",
+    "string=input(\"enter the string: \")\n",
+    "l=len(string)\n",
+    "digits=0\n",
+    "letters=0\n",
+    "for i in range(l):\n",
+    "    if(string[i].isdigit()):\n",
+    "        digits+=1\n",
+    "    else:\n",
+    "        letters+=1\n",
+    "print(\"digits: \",digits)\n",
+    "print(\"letters: \",letters)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d0585d6d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8) Write a Python program to check the validity of password input by users.At least 1 letter between [a-z] and 1 letter \n",
+    "#between [A-Z]. At least 1 number between [0-9]. At least 1 character from [$#@].Minimum length 6 characters.\n",
+    "#Maximum length 16 characters\n",
+    "\n",
+    "password=input(\"enter your password\\n\")\n",
+    "upper_letter=0\n",
+    "lower_letter=0\n",
+    "number=0\n",
+    "char=0\n",
+    "#print(\"enter between 6-16 characters\") \n",
+    "if(6<len(password)<16):\n",
+    "    for i in password:\n",
+    "        if(i.islower()):\n",
+    "            lower_letter=1\n",
+    "        elif(i.isupper()):\n",
+    "            upper_letter=1\n",
+    "        elif(i.isdigit()):\n",
+    "            number=1\n",
+    "        elif(i==\"@\") or (i==\"$\") or (i==\"#\"):\n",
+    "            char=1\n",
+    "    if(lower_letter==1) and (upper_letter==1) and (number==1) and (char==1):\n",
+    "        print(\"password is valid\")\n",
+    "    else:\n",
+    "        print(\"password is invalid\")     "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9045220e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9) Write a program in Python to reverse a word by using while loop.\n",
+    "\n",
+    "string=input(\"enter your string: \")\n",
+    "i=0\n",
+    "n=len(string)\n",
+    "reverse_string=\"\"\n",
+    "while (i<=n-1):\n",
+    "    reverse_string=string[i]+reverse_string\n",
+    "    i=i+1\n",
+    "print(reverse_string)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c60e5a0e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10) Write a program which takes 10 integers as input using loop and print their average value on the screen.\n",
+    "\n",
+    "n=int(input(\"enter the range: \"))\n",
+    "s=0\n",
+    "avg=0\n",
+    "for i in range(n):\n",
+    "    num=int(input(\"enter your number\"))\n",
+    "    s+=num\n",
+    "print(s)\n",
+    "avg=(s/n)\n",
+    "print(avg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "11bbb14e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11) Write a program which takes integer inputs from user until he/she presses “q” (Ask to press q to quit after every integer \n",
+    "#input). Print average and product of all numbers.\n",
+    "\n",
+    "product=1\n",
+    "avg=0\n",
+    "s=0\n",
+    "count=0\n",
+    "while(True):\n",
+    "    num=input(\"enter the number\")\n",
+    "    if(num==\"q\"):\n",
+    "        break\n",
+    "    product=product*int(num)\n",
+    "    s=s+int(num)\n",
+    "    count=count+1\n",
+    "#print(s)\n",
+    "print(\"product: \",product)\n",
+    "avg=(s/count)\n",
+    "print(\"average: \",avg)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d2cc3d26",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#12) Write a Python program which will remove all digits or any other characters from the string except alphabets.\n",
+    "\n",
+    "string=input(\"enter your string: \")\n",
+    "new_string=\"\"\n",
+    "for i in string:\n",
+    "    if(i.isalpha()):\n",
+    "        new_string+=i\n",
+    "print(new_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5a11714d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#13) Write a python program to find the sum of all even numbers from 0 to 10\n",
+    "\n",
+    "n=int(input(\"enter your range: \"))\n",
+    "s=0\n",
+    "for i in range(1,n+1):\n",
+    "    if(i%2==0):\n",
+    "        s+=i\n",
+    "print(s)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cc1efca0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#14) Write a python program which will accept a digit and print All the numbers before it till 0.\n",
+    "\n",
+    "n=int(input(\"enter the range: \"))\n",
+    "i=0\n",
+    "while(i<=n):\n",
+    "    print(n)\n",
+    "    n=n-1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f62dac93",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#15) Create a dynamic calculator which will run continually till you press “c\".\n",
+    "\n",
+    "while (2==2):\n",
+    "    x=int(input(\"enter ur first num : \"))\n",
+    "    y=int(input(\"enter  ur second num: \"))\n",
+    "    c=input(\"enter the symbol +,-,/,%,*,**,// : \")\n",
+    "    if (c==\"+\"):\n",
+    "        print(\"{}+{}={}\".format(x,y,x+y))\n",
+    "    elif (c==\"*\"):\n",
+    "        print(\"{}*{}={}\".format(x,y,x*y))\n",
+    "    elif (c==\"-\"):\n",
+    "        print(\"{}-{}={}\".format(x,y,x-y))\n",
+    "    elif (c==\"/\"):\n",
+    "        print(\"{}/{}={}\".format(x,y,x/y))\n",
+    "    elif (c==\"**\"):\n",
+    "        print(\"{}**{}={}\".format(x,y,x**y))\n",
+    "    elif(c==\"%\"):\n",
+    "        print(\"{}%{}={}\".format(x,y,x%y))\n",
+    "    elif(c.lower()==\"c\"):\n",
+    "        break\n",
+    "    else:\n",
+    "        print(\"enter either correct symbol or c\")\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
