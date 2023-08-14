@@ -1,0 +1,351 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5371a3d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number9\n",
+      "enter  another nnumber5\n",
+      "product:  45\n",
+      "remainder: 1.8\n"
+     ]
+    }
+   ],
+   "source": [
+    "#1) Write a program to accept two numbers from the user and calculate multiplication, division\n",
+    " \n",
+    "num=int(input(\"enter a number\"))\n",
+    "num2=int(input(\"enter  another nnumber\"))\n",
+    "print(\"product: \",num*num2)\n",
+    "print(\"remainder:\",num/num2 )"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "06c436dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a string:sadhana\n",
+      "s d a a "
+     ]
+    }
+   ],
+   "source": [
+    "#2) Write a python program to print the characters from a string that are present at an even index\n",
+    " \n",
+    "string=input(\"enter a string:\")\n",
+    "l=len(string)\n",
+    "for i in range(l):\n",
+    "    if(i%2==0):\n",
+    "        print(string[i],end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "78b4a865",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a string:chinni sadhana\n",
+      "h n i s d a a "
+     ]
+    }
+   ],
+   "source": [
+    "#3) Write a python program to print the characters from a string that are present at an odd index\n",
+    "\n",
+    "string=input(\"enter a string:\")\n",
+    "l=len(string)\n",
+    "for i in range(l):\n",
+    "    if(i%2!=0):\n",
+    "        print(string[i],end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "83075d96",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number6\n",
+      "enter another number1\n",
+      "difference:  5\n"
+     ]
+    }
+   ],
+   "source": [
+    "#4) Write a python program which will print the sum of the two numbers if the two numbers are even or it will print the \n",
+    "#difference of two numbers\n",
+    "\n",
+    "num1=int(input(\"enter a number\"))\n",
+    "num2=int(input(\"enter another number\"))\n",
+    "if(num1%2==0) and (num2%2==0):\n",
+    "    print(\"sum: \",num1+num2)\n",
+    "else:\n",
+    "    print(\"difference: \",num1-num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8b9a2127",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a stringchinni\n",
+      "C h I n N i "
+     ]
+    }
+   ],
+   "source": [
+    "#5) Write a python program to convert all even indexed alphabets to upper and odd indexed char \n",
+    "\n",
+    "string=input(\"enter a string\")\n",
+    "l=len(string)\n",
+    "for i in range(l):\n",
+    "    if(i%2==0):\n",
+    "        j=string[i]\n",
+    "        print(j.upper(),end=\" \")\n",
+    "    else:\n",
+    "        j=string[i]\n",
+    "        print(j.lower(),end=\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "b9a9f04a",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "enter a number: 8\n",
+      "False\n"
+     ]
+    }
+   ],
+   "source": [
+    "#6) Write a python program which will print True if the input number is divisible by 5 or else False\n",
+    "\n",
+    "num=int(input(\"enter a number: \"))\n",
+    "if(num%5==0):\n",
+    "    print(True)\n",
+    "else:\n",
+    "    print(False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f6447020",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#7) Given two integer numbers return their product only if the is greater than 1000, else return their sum\n",
+    "\n",
+    "num1=int(input(\"enter num one\"))\n",
+    "num2=int(input(\"enter num two\"))\n",
+    "if((num1*num2)>1000):\n",
+    "    print(num1*num2)\n",
+    "else:\n",
+    "    print(num1+num2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7f78c7d1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#8) Given two strings x, y writes a program to return a new string made of x and y’s first, middle, and last characters\n",
+    "\n",
+    "str1=input(\"enter string one: \")\n",
+    "str2=input(\"enter string two: \")\n",
+    "l=len(str1)\n",
+    "m=len(str2)\n",
+    "print(str1[0]+str2[0]+str1[l//2]+str2[m//2]+str1[-1]+str2[-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e7ee3add",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#9) Write a python program to take three names as input from a user in the single input () function call\n",
+    "\n",
+    "n=3\n",
+    "for i in range(1,n+1):\n",
+    "    n=input()\n",
+    "    print(\"name\",i,\":-\",n)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4015dafc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#10) Write a Python program to get a string from a given string where all occurrences of its first char have been \n",
+    "#changed to '@', except the first char itself.\n",
+    "\n",
+    "string=input(\"enter the string: \")\n",
+    "a=string[0]\n",
+    "res=string[0]+string[1:].replace(string[0],\"@\")\n",
+    "print(res)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "523e00dc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#11) Write a Python program to add 'ing' at the end of a given string (string length should be equal to or more than 3). If \n",
+    "#the given string already ends with 'ing' then add 'ly' instead.If the string length of the given string is less than 3, leave it  \n",
+    "#If the string length of the given string is less than 3, leave it \n",
+    "#unchanged\n",
+    "\n",
+    "string=input(\"enter a string\")\n",
+    "if(string.endswith(\"ing\") and len(string)>4):\n",
+    "    print(string[0:-4]+string[-4:].replace(\"ing\",\"ly\"))\n",
+    "elif(len(string)<3):\n",
+    "    print(string)\n",
+    "else:\n",
+    "    print(string+\"ing\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "547f9561",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#12) Write a python program that accepts two inputs num1 and num2 print True if one of them is 10 or if their sum is 10\n",
+    "#otherwise print False\n",
+    "\n",
+    "num1=int(input(\"enter num1: \"))\n",
+    "num2=int(input(\"enter num2: \"))\n",
+    "if(num1==10) or (num2==10) or (num1+num2==10):\n",
+    "    print(\"True\")\n",
+    "else:\n",
+    "    print(\"False\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0b675734",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#13) Write a python program that accepts three inputs x, y and z print True if x*y>z otherwise False\n",
+    "\n",
+    "x=int(input(\"enter num one: \"))\n",
+    "y=int(input(\"enter num two: \"))\n",
+    "z=int(input(\"enter num three check: \"))\n",
+    "if(x*y>z):\n",
+    "    print(\"True\")\n",
+    "else:\n",
+    "    print(\"False\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d8d76593",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#14) Write a python program that accepts two strings inputs return True depending on whether the total number of \n",
+    "#characters in the first string is equal to the total number of characters in the second string\n",
+    "\n",
+    "str1=input()\n",
+    "str2=input()\n",
+    "if(len(str1)==len(str2)):\n",
+    "    print(True)\n",
+    "else:\n",
+    "    print(False)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4127e00b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#15) Write a python program that takes a string input, we'll say that the front is the first three characters of the string. If the \n",
+    "#that the front is the first three characters of the string. If the #string length is less than three characters, the front is \n",
+    "#whatever is there. Return a new string, which is three copies \n",
+    "#of the front\n",
+    "\n",
+    "string=input(\"enter a string\")\n",
+    "if(len(string)<3):\n",
+    "    print(string)\n",
+    "else:\n",
+    "    for i in range(3):\n",
+    "        print(string[:3])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8e4846d7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
